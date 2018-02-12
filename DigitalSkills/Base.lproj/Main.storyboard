@@ -1,80 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
-        <scene sceneID="hNz-n2-bh7">
+        <!--Последние новости-->
+        <scene sceneID="Lnd-3z-acs">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                <tableViewController id="Wy5-LE-Ven" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YD3-9I-qEG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="w5h-cy-l7b">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ayS-5C-Vo9">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ayS-5C-Vo9" id="hMo-WK-mtK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В Москве проходит чемпионат WorldSkills 2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLl-1S-wE0">
+                                                    <rect key="frame" x="16" y="11" width="343" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aLl-1S-wE0" firstAttribute="bottom" secondItem="hMo-WK-mtK" secondAttribute="bottomMargin" id="ENG-zQ-z9q"/>
+                                                <constraint firstItem="aLl-1S-wE0" firstAttribute="trailing" secondItem="hMo-WK-mtK" secondAttribute="trailingMargin" id="Z8J-g0-vG5"/>
+                                                <constraint firstItem="aLl-1S-wE0" firstAttribute="leading" secondItem="hMo-WK-mtK" secondAttribute="leadingMargin" id="hH4-WB-GxM"/>
+                                                <constraint firstItem="aLl-1S-wE0" firstAttribute="top" secondItem="hMo-WK-mtK" secondAttribute="topMargin" id="ylu-S5-5UO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rdS-uB-KoQ" kind="show" id="F0K-kV-T2w"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="U2p-7M-IHc">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U2p-7M-IHc" id="2JW-yc-mOl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В Москве проходит чемпионат WorldSkills 2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYV-hM-wsu">
+                                                    <rect key="frame" x="16" y="11" width="343" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CYV-hM-wsu" firstAttribute="bottom" secondItem="2JW-yc-mOl" secondAttribute="bottomMargin" id="joL-Hq-ANW"/>
+                                                <constraint firstItem="CYV-hM-wsu" firstAttribute="trailing" secondItem="2JW-yc-mOl" secondAttribute="trailingMargin" id="v2n-MM-qwL"/>
+                                                <constraint firstItem="CYV-hM-wsu" firstAttribute="top" secondItem="2JW-yc-mOl" secondAttribute="topMargin" id="y1Y-AE-kfi"/>
+                                                <constraint firstItem="CYV-hM-wsu" firstAttribute="leading" secondItem="2JW-yc-mOl" secondAttribute="leadingMargin" id="zxh-EG-NAg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rdS-uB-KoQ" kind="show" id="GHz-72-dE3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HuI-Xm-g30">
+                                        <rect key="frame" x="0.0" y="128" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HuI-Xm-g30" id="RDn-9C-hwi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В Москве проходит чемпионат WorldSkills 2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYh-2O-MmZ">
+                                                    <rect key="frame" x="16" y="11" width="343" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eYh-2O-MmZ" firstAttribute="top" secondItem="RDn-9C-hwi" secondAttribute="topMargin" id="lSr-4d-zNo"/>
+                                                <constraint firstItem="eYh-2O-MmZ" firstAttribute="bottom" secondItem="RDn-9C-hwi" secondAttribute="bottomMargin" id="lip-Yi-Ts3"/>
+                                                <constraint firstItem="eYh-2O-MmZ" firstAttribute="trailing" secondItem="RDn-9C-hwi" secondAttribute="trailingMargin" id="onM-UH-dgY"/>
+                                                <constraint firstItem="eYh-2O-MmZ" firstAttribute="leading" secondItem="RDn-9C-hwi" secondAttribute="leadingMargin" id="uYd-PA-YS9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rdS-uB-KoQ" kind="show" id="Xku-Oe-pZF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cyb-mD-Y4y">
+                                        <rect key="frame" x="0.0" y="192" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cyb-mD-Y4y" id="eKx-AE-OrQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В Москве проходит чемпионат WorldSkills 2018 с 12 февраля по 17 февраля. Будет много разных компетенций" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7n-lG-Hex">
+                                                    <rect key="frame" x="16" y="11" width="343" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="k7n-lG-Hex" firstAttribute="bottom" secondItem="eKx-AE-OrQ" secondAttribute="bottomMargin" id="ClP-6f-mus"/>
+                                                <constraint firstItem="k7n-lG-Hex" firstAttribute="top" secondItem="eKx-AE-OrQ" secondAttribute="topMargin" id="flQ-g2-e6m"/>
+                                                <constraint firstItem="k7n-lG-Hex" firstAttribute="trailing" secondItem="eKx-AE-OrQ" secondAttribute="trailingMargin" id="tcd-OY-X6i"/>
+                                                <constraint firstItem="k7n-lG-Hex" firstAttribute="leading" secondItem="eKx-AE-OrQ" secondAttribute="leadingMargin" id="x08-2b-Vbt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rdS-uB-KoQ" kind="show" id="CLc-hE-6dB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gHR-5K-AX7">
+                                        <rect key="frame" x="0.0" y="256" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gHR-5K-AX7" id="lXb-MN-CkW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В Москве проходит чемпионат WorldSkills 2018 с 12 февраля по 17 февраля. Будет много разных компетенций" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oll-C6-fn3">
+                                                    <rect key="frame" x="16" y="11" width="343" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Oll-C6-fn3" firstAttribute="top" secondItem="lXb-MN-CkW" secondAttribute="topMargin" id="HOh-3y-Ljg"/>
+                                                <constraint firstItem="Oll-C6-fn3" firstAttribute="leading" secondItem="lXb-MN-CkW" secondAttribute="leadingMargin" id="Lw8-2f-4Re"/>
+                                                <constraint firstItem="Oll-C6-fn3" firstAttribute="bottom" secondItem="lXb-MN-CkW" secondAttribute="bottomMargin" id="bdL-1u-Xok"/>
+                                                <constraint firstItem="Oll-C6-fn3" firstAttribute="trailing" secondItem="lXb-MN-CkW" secondAttribute="trailingMargin" id="lnO-Ee-nkJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rdS-uB-KoQ" kind="show" id="Zff-mH-Zwr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Wy5-LE-Ven" id="nKL-0D-J7m"/>
+                            <outlet property="delegate" destination="Wy5-LE-Ven" id="tm6-zS-273"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Последние новости" id="65Y-Iy-eI5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NjK-4s-ZNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="-443.02848575712147"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wh8-cL-l4z">
+            <objects>
+                <viewController id="rdS-uB-KoQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xxC-n0-kYn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4yP-ve-mXc">
+                                <rect key="frame" x="16" y="64" width="343" height="545"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. http://yandex.ru</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="4yP-ve-mXc" firstAttribute="leading" secondItem="CcW-46-tsY" secondAttribute="leading" constant="16" id="E50-2b-Zh4"/>
+                            <constraint firstItem="4yP-ve-mXc" firstAttribute="top" secondItem="CcW-46-tsY" secondAttribute="top" id="FpD-G4-hSu"/>
+                            <constraint firstItem="CcW-46-tsY" firstAttribute="bottom" secondItem="4yP-ve-mXc" secondAttribute="bottom" constant="9" id="paL-JP-vrU"/>
+                            <constraint firstItem="CcW-46-tsY" firstAttribute="trailing" secondItem="4yP-ve-mXc" secondAttribute="trailing" constant="16" id="xmO-hj-Vjg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                        <viewLayoutGuide key="safeArea" id="CcW-46-tsY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0G-nZ-xsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="2648.8000000000002" y="-443.02848575712147"/>
         </scene>
-        <!--Second-->
+        <!--Новости-->
+        <scene sceneID="yIp-bD-muG">
+            <objects>
+                <navigationController id="0lI-wZ-1ml" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Новости" image="first" id="CwY-mY-QTg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6WF-Pr-lbG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wy5-LE-Ven" kind="relationship" relationship="rootViewController" id="d5V-9b-Tq1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwb-oI-6gG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-443"/>
+        </scene>
+        <!--Настройки-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="DigitalSkills" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSf-0e-HmY">
+                                <rect key="frame" x="72.5" y="20" width="286.5" height="30"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E5-0M-tin">
+                                <rect key="frame" x="16" y="25" width="48.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lzh-Dk-QuK">
+                                <rect key="frame" x="83" y="58" width="276" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDn-4E-eea">
+                                <rect key="frame" x="16" y="63" width="59.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J09-SB-Hnp">
+                                <rect key="frame" x="165" y="96" width="44" height="30"/>
+                                <state key="normal" title="Войти"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFE-rC-h5f">
+                                <rect key="frame" x="164" y="134" width="46" height="30"/>
+                                <state key="normal" title="Выйти">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="Lzh-Dk-QuK" firstAttribute="top" secondItem="BSf-0e-HmY" secondAttribute="bottom" constant="8" id="6PP-iU-Vhu"/>
+                            <constraint firstItem="Lzh-Dk-QuK" firstAttribute="leading" secondItem="oDn-4E-eea" secondAttribute="trailing" constant="8" id="LCB-Wc-Dl2"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Lzh-Dk-QuK" secondAttribute="trailing" constant="16" id="NCz-TA-8nf"/>
+                            <constraint firstItem="Lzh-Dk-QuK" firstAttribute="leading" secondItem="oDn-4E-eea" secondAttribute="trailing" constant="8" id="NjY-Aj-TYI"/>
+                            <constraint firstItem="BSf-0e-HmY" firstAttribute="leading" secondItem="6E5-0M-tin" secondAttribute="trailing" constant="8" id="VHq-xq-NbU"/>
+                            <constraint firstItem="aFE-rC-h5f" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="bas-jJ-F5g"/>
+                            <constraint firstItem="6E5-0M-tin" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="16" id="caP-cj-v3D"/>
+                            <constraint firstItem="BSf-0e-HmY" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="hZ3-6g-Nng"/>
+                            <constraint firstItem="oDn-4E-eea" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="16" id="jFc-dP-dgp"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="BSf-0e-HmY" secondAttribute="trailing" constant="16" id="ld2-Kf-jGL"/>
+                            <constraint firstItem="J09-SB-Hnp" firstAttribute="top" secondItem="Lzh-Dk-QuK" secondAttribute="bottom" constant="8" id="qSu-c4-S2J"/>
+                            <constraint firstItem="BSf-0e-HmY" firstAttribute="centerY" secondItem="6E5-0M-tin" secondAttribute="centerY" id="tcz-zr-Bd5"/>
+                            <constraint firstItem="aFE-rC-h5f" firstAttribute="top" secondItem="J09-SB-Hnp" secondAttribute="bottom" constant="8" id="udN-mA-afW"/>
+                            <constraint firstItem="Lzh-Dk-QuK" firstAttribute="centerY" secondItem="oDn-4E-eea" secondAttribute="centerY" id="uzJ-ku-k6R"/>
+                            <constraint firstItem="J09-SB-Hnp" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="x5y-pM-SFk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Настройки" image="second" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -86,7 +294,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="0lI-wZ-1ml" kind="relationship" relationship="viewControllers" id="9u9-np-l2Y"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
@@ -99,4 +307,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="F0K-kV-T2w"/>
+    </inferredMetricsTieBreakers>
 </document>
