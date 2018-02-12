@@ -161,10 +161,10 @@
             </objects>
             <point key="canvasLocation" x="1604" y="-443.02848575712147"/>
         </scene>
-        <!--View Controller-->
+        <!--News Item View Controller-->
         <scene sceneID="wh8-cL-l4z">
             <objects>
-                <viewController id="rdS-uB-KoQ" sceneMemberID="viewController">
+                <viewController id="rdS-uB-KoQ" customClass="NewsItemViewController" customModule="DigitalSkills" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xxC-n0-kYn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,6 +193,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CcW-46-tsY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fEM-E9-ihA">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="action" id="fRc-G6-e9J">
+                            <connections>
+                                <action selector="share:" destination="rdS-uB-KoQ" id="Mda-Sl-phM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0G-nZ-xsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
